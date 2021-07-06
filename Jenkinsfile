@@ -1,21 +1,21 @@
-pipeline{
+pipeline {
     agent any 
 
-    stages{
-        stage("Build"){
-            step{
+    stages {
+        stage("Build") {
+            steps {
                 echo "Building from the Jenkinsfile"
             }
         }
     
         stage("Test"){
-            step{
+            steps {
                echo "Testing from the Jenkinsfile"
 
             }
         }
         stage("Deploy"){
-            step{
+            steps{
                 echo "Deploy from the Jenkinsfile"
             }
         }        
